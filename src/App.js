@@ -31,63 +31,63 @@ function App() {
     typeSpeed:60
   })
   return (
-    <div className="bg-gradient-to-r from-amber-100 to-cyan-100 px-10 scroll-smooth container">
+    <div className="bg-gradient-to-r from-amber-100 to-cyan-100 px-10 scroll-smooth ">
       
-      <navbar className='py-5 flex justify-between'>
-        <div className=''>
+      <navbar className='py-5 flex justify-between max-lg:flex max-lg:flex-col max-lg:items-center'>
+        <div className='max-lg:mb-5'>
           <a href='#'><img src={logo} className='h-10 rounded-xl'/></a>
         </div>
-        <div className=''>
-          <a href='#' className='px-5 py-2'>Home</a>
-          <a href='#' className='px-5 py-2'>About Me</a>
-          <a href='#projects' className='px-5 py-2'>Projects</a>
-          <a href='#contact' className='bg-red-600 hover:bg-red-800 rounded-xl px-5 py-2 '>Contact Me</a>
+        <div className='max-lg:justify-between'>
+          <a href='#' className='px-5 py-2 max-lg:hidden'>Home</a>
+          <a href='#' className='px-5 py-2 max-lg:mr-2'>About Me</a>
+          <a href='#projects' className='px-5 py-2 max-lg:mr-2'>Projects</a>
+          <a href='#contact' className='bg-red-600 hover:bg-red-800 rounded-xl px-5 py-2 max-lg:bg-transparent max-lg:p-0'>Contact Me</a>
         </div>
       </navbar>
-      <div className='grid grid-cols-12 grid-rows-5 hover:scroll-auto'>
-        <div className='col-start-2 col-span-4 row-start-1 row-span-1 flex justify-center items-center '>
-          <img src={ysf} className=' rounded-full h-80  '></img>
+      <div className='grid grid-cols-12 grid-rows-5 hover:scroll-auto max-lg:flex max-lg:flex-col max-lg:items-center'>
+        <div className='col-start-2 col-span-4 row-start-1 row-span-1 flex justify-center items-center max-lg:py-10'>
+          <img src={ysf} className=' rounded-full h-80  max-lg:h-40'></img>
         </div>
         <div className='col-start-7 col-span-6 row-start-1 row-span-1 flex flex-col justify-center items-start '>
-          <div className='text-4xl mb-10 font-bold w-4/5'><h1>{text} <Cursor/><span></span> </h1></div>
-          <div className='flex justify-center items-center mb-10'>
+          <div className='text-4xl mb-10 font-bold w-4/5 max-lg:w-full max-lg:h-1/4 max-lg:mb-16 '><h1>{text} <Cursor/><span></span> </h1></div>
+          <div className='flex justify-center items-center mb-10 max-lg:mb-16'>
             {allSkills.map((allSkill)=>{
-              return (<img src={allSkill} className='pr-5'/>)
+              return (<img src={allSkill} className='pr-5 max-lg:h-6'/>)
             })}
           </div>
-          <div><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 transition-transform hover:-translate-y-1'>Contact Me</a></div>
+          <div className='max-lg:mb-16'><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 transition-transform hover:-translate-y-1 '>Contact Me</a></div>
         </div>
         
-        <div id='projects' className='col-start-7 col-span-4 row-start-2 row-span-1 flex justify-end items-center h-screen'>
+        <div id='projects' className='col-start-7 col-span-4 row-start-2 row-span-1 flex justify-end items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5'>
           <div className='screen rounded-sm'>
             <img src={project1} className='rounded-lg w-56 h-80 object-cover '></img>
           </div>
         </div>
-        <div className='col-start-3 col-span-6 row-start-2 row-span-1 flex flex-col justify-center items-start h-screen '>
-          <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5'>Full-Stack Responsive E-commerce App</h1></div>
-          <p className='w-9/12 mb-5'><ul className='list-disc leading-10'>
+        <div className='col-start-3 col-span-6 row-start-2 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
+          <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5 max-lg:w-full'>Full-Stack Responsive E-commerce App</h1></div>
+          <p className='w-9/12 mb-5 max-lg:w-full'><ul className='list-disc leading-10'>
               <li>Express.js is used to create api paths and requests.</li>
               <li>Responsive design</li>
               <li>For login passport.js and bcrypt library is used.</li>
               <li>PostgreSQL(relational database) database is used to store data and sql is used to retrieve and write datas.</li>
               <li>Frontend login-products-orders pages are developed</li>
               <li>React-redux to provide global state management</li>
-            </ul> <a href='https://e-commerce-application-c201bc9d6502.herokuapp.com/' className='inline flex items-center justify-start font-bold text-red-800'><img src={arrow} className='inline mr-2'/> Visit Project</a></p>
+            </ul> <a href='https://e-commerce-application-c201bc9d6502.herokuapp.com/' className=' flex items-center justify-start font-bold text-red-800'><img src={arrow} className='inline mr-2'/> Visit Project</a></p>
           <div className='flex justify-center items-center mb-10'>
             {allSkills.map((allSkill)=>{
-              return (<img src={allSkill} className='pr-5 hover:h-16'/>)
+              return (<img src={allSkill} className='pr-5 hover:h-16 max-lg:h-6'/>)
             })}
           </div>
           <div><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 '>Contact Me</a></div>
         </div>
-        <div className='col-start-3 col-span-4 row-start-3 row-span-1 flex justify-start items-center h-screen '>
+        <div className='col-start-3 col-span-4 row-start-3 row-span-1 flex justify-start items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5 '>
         <div className='screen'>
             <img src={project2} className='rounded-lg w-56 h-80 object-cover '></img>
           </div>
         </div>
-        <div className='col-start-7 col-span-6 row-start-3 row-span-1 flex flex-col justify-center items-start h-screen'>
-          <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5'>Frontend-React Game App</h1></div>
-          <p className='w-9/12 mb-5'>
+        <div className='col-start-7 col-span-6 row-start-3 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
+          <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5 max-lg:w-full'>Frontend-React Game App</h1></div>
+          <p className='w-9/12 mb-5 max-lg:w-full'>
           <ul className='list-disc leading-10'>
               <li>This project is frontend project.</li>
               <li>This project is developed to practice tailwind css library and Material UI component library.</li>
@@ -97,19 +97,19 @@ function App() {
              <a href='https://gameapp-yssfklc.netlify.app/' className='flex items-center justify-start font-bold text-red-800'><img src={arrow} className='inline mr-2'/>Visit Project</a></p>
           <div className='flex justify-center items-center mb-10'>
             {secondProject.map((allSkill)=>{
-              return (<img src={allSkill} className='pr-5 hover:h-16'/>)
+              return (<img src={allSkill} className='pr-5 hover:h-16 max-lg:h-8'/>)
             })}
           </div>
           <div><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 '>Contact Me</a></div>
         </div>
-        <div className='col-start-7 col-span-4 row-start-4 row-span-1 flex justify-end items-center h-screen '>
+        <div className='col-start-7 col-span-4 row-start-4 row-span-1 flex justify-end items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-10'>
         <div className='screen2 rounded-lg'>
             <img src={project3} className='rounded-lg w-56 h-80 object-cover '></img>
           </div>
         </div>
-        <div className='col-start-3 col-span-6 row-start-4 row-span-1 flex flex-col justify-center items-start h-screen'>
-          <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5'>A Responsive Freelance Website From The Scratch - 'architectural-website'</h1></div>
-          <p className='w-9/12 mb-5'>
+        <div className='col-start-3 col-span-6 row-start-4 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
+          <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5 max-lg:w-full'>A Responsive Freelance Website From The Scratch - 'architectural-website'</h1></div>
+          <p className='w-9/12 mb-5 max-lg:w-full'>
             <ul className='list-disc leading-10'>
                 <li>A Freelance project is designed, developed and deployed.</li>
                 <li>In this project, a website is developed only using plain <strong>HTML and CSS</strong>.</li>
@@ -123,30 +123,30 @@ function App() {
              <a href='https://zykmimarlik.com/' className='flex items-center justify-start font-bold text-red-800'><img src={arrow} className='inline mr-2'/>Visit Project</a></p>
           <div className='flex justify-center items-center mb-10'>
             {thirdProject.map((allSkill)=>{
-              return (<img src={allSkill} className='pr-5 hover:h-16'/>)
+              return (<img src={allSkill} className='pr-5 hover:h-16 max-lg:h-8'/>)
             })}
           </div>
           <div><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 '>Contact Me</a></div>
         </div>   
-        <div className='col-start-3 col-span-5 row-start-5 row-span-1 flex justify-start items-center h-screen '>
+        <div className='col-start-3 col-span-5 row-start-5 row-span-1 flex justify-start items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5'>
           <img src={p1} className='rounded-lg'></img>
         </div>
-        <div id='contact' className='col-start-7 col-span-6 row-start-5 row-span-1 flex justify-center items-center h-screen'>
+        <div id='contact' className='col-start-7 col-span-6 row-start-5 row-span-1 flex justify-center items-center h-screen max-lg:h-auto max-lg:mb-10'>
           <div >
             <a href='https://tr.linkedin.com/in/yssfklc' className='flex flex-col justify-center items-center'>
-              <img src={linkedin} className='rounded-lg mr-10 mb-5'/>
+              <img src={linkedin} className='rounded-lg mr-10 mb-5 max-lg:h-10'/>
               <img src={arrow2} className='animate-bounce rounded-lg mr-10 self-center'/>
             </a>
           </div>
           <div >
             <a href='https://github.com/yssfklc' className='flex flex-col justify-center items-center'>
-              <img src={github} className='rounded-lg mr-10 mb-5'/>
+              <img src={github} className='rounded-lg mr-10 mb-5 max-lg:h-10'/>
               <img src={arrow2} className='animate-bounce rounded-lg mr-10 self-center'/>
             </a>
           </div>
           <div >
           <a href='mailto:yssfklc@gmail.com' className='flex flex-col justify-center items-center'>
-            <img src={mail} className='rounded-lg mr-10 mb-5'/>
+            <img src={mail} className='rounded-lg mr-10 mb-5 max-lg:h-10'/>
             <img src={arrow2} className='animate-bounce rounded-lg mr-10 self-center'/>    
           </a>
           </div>
