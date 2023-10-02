@@ -58,9 +58,10 @@ function App() {
           <div className='max-lg:mb-16'><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 transition-transform hover:-translate-y-1 '>Contact Me</a></div>
         </div>
         
-        <div id='projects' className='col-start-7 col-span-4 row-start-2 row-span-1 flex justify-end items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5'>
-          <div className='screen rounded-sm'>
-            <img src={project1} className='rounded-lg w-56 h-80 object-cover '></img>
+        <div id='projects' className='col-start-7 col-span-4 row-start-2 row-span-1 flex justify-end items-center h-screen max-lg:flex-col max-lg:h-auto max-lg:mt-10 max-lg:mb-5'>
+            <p className=' lg:hidden text-lg text-red-600'>Click image to scroll!</p>
+          <div className='screen rounded-sm scroll-auto'>
+            <img src={project1} className='rounded-lg w-56 h-80 object-cover '/>
           </div>
         </div>
         <div className='col-start-3 col-span-6 row-start-2 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
