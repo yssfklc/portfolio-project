@@ -1,7 +1,7 @@
 import './App.css';
 import './index.css';
 import logo from './image/logo.png';
-import ysf from './image/ysf.jpg';
+import ysf from './image/ysf.png';
 import css from './image/css.svg';
 import html from './image/html.svg';
 import js from './image/js.svg';
@@ -49,7 +49,7 @@ function App() {
       </navbar>
       <div className='grid grid-cols-12 grid-rows-6 hover:scroll-auto max-lg:flex max-lg:flex-col max-lg:items-center'>
         <div className='col-start-2 col-span-4 row-start-1 row-span-1 flex justify-center items-center max-lg:py-10'>
-          <img src={ysf} className=' rounded-full h-80  max-lg:h-40'></img>
+          <img src={ysf} className='rounded-full h-96  max-lg:h-40'></img>
         </div>
         <div className='col-start-7 col-span-6 row-start-1 row-span-1 flex flex-col justify-center items-start '>
           <div className='text-4xl mb-10 font-bold w-4/5 max-lg:w-full max-lg:h-1/4 max-lg:mb-16 '><h1>{text} <Cursor/><span></span> </h1></div>
