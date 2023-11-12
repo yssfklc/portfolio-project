@@ -70,7 +70,42 @@ code {
 	-o-transition: top 7s;
 	transition: bottom 7s;
 }
+
 .screen2:hover img {
+  bottom: 0;
+  -webkit-transition: all 7s;
+  -moz-transition: all 7s;
+  -ms-transition: all 7s;
+  -o-transition: all 7s;
+  transition: all 7s;
+}
+
+.screen3 {
+	/* display: block; */
+  border-radius: 8px;
+	width: 300px;
+	height: 350px;
+	overflow: hidden;
+	position: relative;
+	border: 2px solid #b3b3b3;
+	margin: 0 auto;
+}
+.screen3 img {
+	bottom: -380px;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 0;
+  margin:0;
+  padding:0;
+	-webkit-transition: top 7s;
+	-moz-transition: top 7s;
+	-ms-transition: top 7s;
+	-o-transition: top 7s;
+	transition: bottom 7s;
+}
+
+.screen3:hover img {
   bottom: 0;
   -webkit-transition: all 7s;
   -moz-transition: all 7s;
