@@ -14,6 +14,7 @@ import arrow2 from './image/arrow2.svg';
 import linkedin from './image/linkedin.svg';
 import github from './image/github.svg';
 import mail from './image/mail.svg';
+import mongodb from './image/mongodb.svg';
 import p1 from './image/p1.png';
 import project1 from './image/project1.jpg';
 import project2 from './image/project2.jpg';
@@ -25,6 +26,7 @@ function App() {
   const allSkills = [css, html, js, nodejs, psql, react, tailwind];
   const firstProject = [css, html, js, nodejs, psql, react, tailwind];
   const secondProject = [css, html, js, react, tailwind];
+  const dashboardProject = [css, html, js, react, mongodb];
   const thirdProject = [css, html, js];
   const [text]=useTypewriter({
     words:['Web Developer and Business Analyst with a Passion for Creating Beautiful Websites'],
@@ -53,7 +55,7 @@ function App() {
           <div className='text-4xl mb-10 font-bold w-4/5 max-lg:w-full max-lg:h-1/4 max-lg:mb-16 '><h1>{text} <Cursor/><span></span> </h1></div>
           <div className='flex justify-center items-center mb-10 max-lg:mb-16'>
             {allSkills.map((allSkill)=>{
-              return (<img src={allSkill} className='pr-5 max-lg:h-6'/>)
+              return (<img src={allSkill} className='pr-5 max-lg:h-6 h-14'/>)
             })}
           </div>
           <div className='max-lg:mb-16'><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 transition-transform hover:-translate-y-1 '>Contact Me</a></div>
@@ -77,7 +79,7 @@ function App() {
             </ul> <a href='https://e-commerce-application-c201bc9d6502.herokuapp.com/' className=' flex items-center justify-start font-bold text-red-800'><img src={arrow} className='inline mr-2'/> Visit Project</a></p>
           <div className='flex justify-center items-center mb-10'>
             {allSkills.map((allSkill)=>{
-              return (<img src={allSkill} className='pr-5 hover:h-16 max-lg:h-6'/>)
+              return (<img src={allSkill} className='pr-5 hover:h-16 max-lg:h-6 h-14'/>)
             })}
           </div>
           <div><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 '>Contact Me</a></div>
@@ -91,25 +93,26 @@ function App() {
           <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5 max-lg:w-full'>Full-Stack Dashboard</h1></div>
           <p className='w-9/12 mb-5 max-lg:w-full'>
           <ul className='list-disc leading-10'>
-              <li>This project is Full-Stack.</li>
+              <li>This project is a Full-Stack project.</li>
               <li>This project is developed to practice Material UI component library.</li>
               <li>Statistics are represented on graph and table based on company</li>
+              <li>Powered by Mongo DB</li>
               <li>Responsive Design</li>
             </ul>
              <a href='https://dashboard-app-vbav.onrender.com/' className='flex items-center justify-start font-bold text-red-800'><img src={arrow} className='inline mr-2'/>Visit Project</a></p>
           <div className='flex justify-center items-center mb-10'>
-            {secondProject.map((allSkill)=>{
-              return (<img src={allSkill} className='pr-5 hover:h-16 max-lg:h-8'/>)
+            {dashboardProject.map((allSkill)=>{
+              return (<img src={allSkill} className='pr-5 hover:h-16 max-lg:h-8 h-14'/>)
             })}
           </div>
           <div><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 '>Contact Me</a></div>
         </div>
-        <div className='col-start-3 col-span-4 row-start-4 row-span-1 flex justify-start items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5 '>
+        <div className='col-start-3 col-span-4 row-start-5 row-span-1 flex justify-start items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5 '>
         <div className='screen'>
             <img src={project2} className='rounded-lg w-56 h-80 object-cover '></img>
           </div>
         </div>
-        <div className='col-start-7 col-span-6 row-start-4 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
+        <div className='col-start-7 col-span-6 row-start-5 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
           <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5 max-lg:w-full'>Frontend-React Game App</h1></div>
           <p className='w-9/12 mb-5 max-lg:w-full'>
           <ul className='list-disc leading-10'>
@@ -121,17 +124,17 @@ function App() {
              <a href='https://gameapp-yssfklc.netlify.app/' className='flex items-center justify-start font-bold text-red-800'><img src={arrow} className='inline mr-2'/>Visit Project</a></p>
           <div className='flex justify-center items-center mb-10'>
             {secondProject.map((allSkill)=>{
-              return (<img src={allSkill} className='pr-5 hover:h-16 max-lg:h-8'/>)
+              return (<img src={allSkill} className='pr-5 hover:h-16 max-lg:h-8 h-14'/>)
             })}
           </div>
           <div><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 '>Contact Me</a></div>
         </div>
-        <div className='col-start-7 col-span-4 row-start-5 row-span-1 flex justify-end items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-10'>
+        <div className='col-start-7 col-span-4 row-start-4 row-span-1 flex justify-end items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-10'>
         <div className='screen2 rounded-lg'>
             <img src={project3} className='rounded-lg w-56 h-80 object-cover '></img>
           </div>
         </div>
-        <div className='col-start-3 col-span-6 row-start-5 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
+        <div className='col-start-3 col-span-6 row-start-4 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
           <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5 max-lg:w-full'>A Responsive Freelance Website From The Scratch - 'architectural-website'</h1></div>
           <p className='w-9/12 mb-5 max-lg:w-full'>
             <ul className='list-disc leading-10'>
@@ -147,7 +150,7 @@ function App() {
              <a href='https://zykmimarlik.com/' className='flex items-center justify-start font-bold text-red-800'><img src={arrow} className='inline mr-2'/>Visit Project</a></p>
           <div className='flex justify-center items-center mb-10'>
             {thirdProject.map((allSkill)=>{
-              return (<img src={allSkill} className='pr-5 hover:h-16 max-lg:h-8'/>)
+              return (<img src={allSkill} className='pr-5 hover:h-16 max-lg:h-8 h-14'/>)
             })}
           </div>
           <div><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 '>Contact Me</a></div>
