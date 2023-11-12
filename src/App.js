@@ -76,7 +76,7 @@ function App() {
               <li>PostgreSQL(relational database) database is used to store data and sql is used to retrieve and write datas.</li>
               <li>Frontend login-products-orders pages are developed</li>
               <li>React-redux to provide global state management</li>
-            </ul> <a href='https://e-commerce-application-c201bc9d6502.herokuapp.com/' className=' flex items-center justify-start font-bold text-red-800'><img src={arrow} className='inline mr-2'/> Visit Project</a></p>
+            </ul> <a href='https://e-commerce-app-r9ba.onrender.com/' className=' flex items-center justify-start font-bold text-red-800'><img src={arrow} className='inline mr-2'/> Visit Project</a></p>
           <div className='flex justify-center items-center mb-10'>
             {allSkills.map((allSkill)=>{
               return (<img src={allSkill} className='pr-5 hover:h-16 max-lg:h-6 h-14'/>)
