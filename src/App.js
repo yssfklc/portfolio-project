@@ -29,7 +29,7 @@ function App() {
   const dashboardProject = [css, html, js, react, mongodb];
   const thirdProject = [css, html, js];
   const [text]=useTypewriter({
-    words:['Web Developer and Business Analyst with a Passion for Creating Beautiful Websites'],
+    words:['Expertise in Data-Driven Software Product Development'],
     loop:1,
     typeSpeed:60
   })
