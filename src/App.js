@@ -15,6 +15,8 @@ import linkedin from './image/linkedin.svg';
 import github from './image/github.svg';
 import mail from './image/mail.svg';
 import mongodb from './image/mongodb.svg';
+import openai from './image/openai.svg';
+import sendicon from './image/sendicon.svg';
 import p1 from './image/p1.png';
 import project1 from './image/project1.jpg';
 import project2 from './image/project2.jpg';
@@ -47,6 +49,9 @@ function App() {
           <a href='#contact' className='bg-red-600 hover:bg-red-800 rounded-xl px-5 py-2 max-lg:bg-transparent max-lg:p-0'>Contact Me</a>
         </div>
       </navbar>
+      <div className='bg-gradient-to-r from-red-500 to-purple-500 rounded-xl py-3 flex justify-center items-center'>
+        <a href='https://yusufai.streamlit.app/' target='_blank' ><p className='flex text-neutral-700 underline'><img src={openai} className='mr-2'></img> !!!! Ask Your Questions About me to Yusuf AI (Click Here)<img src={sendicon} className='ml-2'></img></p></a>
+      </div>
       <div className='grid grid-cols-12 grid-rows-6 hover:scroll-auto max-lg:flex max-lg:flex-col max-lg:items-center'>
         <div className='col-start-2 col-span-4 row-start-1 row-span-1 flex justify-center items-center max-lg:py-10'>
           <img src={ysf} className='rounded-full h-96  max-lg:h-40'></img>
