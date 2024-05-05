@@ -52,27 +52,74 @@ function App() {
       <div className='bg-gradient-to-r from-red-500 to-purple-500 rounded-xl py-3 flex justify-center items-center'>
         <a href='https://yusufai.streamlit.app/' target='_blank' ><p className='flex text-neutral-700 underline'><img src={openai} className='mr-2'></img> !!!! Ask Your Questions About me to Yusuf AI (Click Here)<img src={sendicon} className='ml-2'></img></p></a>
       </div>
-      <div className='grid grid-cols-12 grid-rows-6 hover:scroll-auto max-lg:flex max-lg:flex-col max-lg:items-center'>
-        <div className='col-start-2 col-span-4 row-start-1 row-span-1 flex justify-center items-center max-lg:py-10'>
+      <div className='grid grid-cols-12 grid-rows-8 hover:scroll-auto max-lg:flex max-lg:flex-col max-lg:items-center'>
+        <div className='col-start-2 col-span-4 row-start-1 row-span-1 h-screen flex justify-center items-center max-lg:py-10'>
           <img src={ysf} className='rounded-full h-96  max-lg:h-40'></img>
         </div>
-        <div className='col-start-7 col-span-6 row-start-1 row-span-1 flex flex-col justify-center items-start '>
+        <div className='col-start-7 col-span-6 row-start-1 row-span-1 h-screen flex flex-col justify-center items-start '>
           <div className='text-4xl mb-10 font-bold w-4/5 max-lg:w-full max-lg:h-1/4 max-lg:mb-16 '><h1>{text} <Cursor/><span></span> </h1></div>
+          
           <div className='flex justify-center items-center mb-10 max-lg:mb-16'>
             {allSkills.map((allSkill)=>{
               return (<img src={allSkill} className='pr-5 max-lg:h-6 h-14'/>)
             })}
           </div>
           <div className='max-lg:mb-16'><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 transition-transform hover:-translate-y-1 '>Contact Me</a></div>
+              
         </div>
-        
-        <div id='projects' className='col-start-7 col-span-4 row-start-2 row-span-1 flex justify-end items-center h-screen max-lg:flex-col max-lg:h-auto max-lg:mt-10 max-lg:mb-5'>
+          <div className='flex col-start-3 col-span-8 row-start-2 h-max justify-center items-center max-lg:flex-col '>
+              <div class="bg-gray-300 w-4/12 rounded overflow-hidden shadow-lg mr-5 max-lg:w-full max-lg:mb-4">
+                <div className='flex justify-center items-center'>
+                  <img class="w-full h-64 object-cover" src={project1} alt="Sunset in the mountains"/>
+                </div>
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">Software Projects</div>
+                  <p class="text-gray-700 text-base">
+                    Reach the details of software projects in details with their complete explanations.
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2 mb-2">
+                <a href='#contact' className='bg-purple-600 hover:bg-purple-800 rounded-xl px-5 py-2'>View the Projects</a>
+                </div>
+              </div>
+              <div class="bg-gray-300 w-4/12 rounded overflow-hidden shadow-lg mr-5 max-lg:w-full max-lg:mb-4">
+                <div className='flex justify-center items-center'>
+                  <img class="w-full h-64 object-cover" src={project1} alt="Sunset in the mountains"/>
+                </div>
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">AI Projects</div>
+                  <p class="text-gray-700 text-base">
+                    Reach the details of AI projects in details with their complete explanations.
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2 mb-2">
+                <a href='#contact' className='bg-purple-600 hover:bg-purple-800 rounded-xl px-5 py-2'>View The Projects</a>
+                </div>
+              </div>
+              <div class="bg-gray-300 w-4/12 rounded overflow-hidden shadow-lg mr-5 max-lg:w-full max-lg:mb-4">
+                <div className='flex justify-center items-center'>
+                  <img class="w-full h-64 object-cover" src={project1} alt="Sunset in the mountains"/>
+                </div>
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">Professional Experience</div>
+                  <p class="text-gray-700 text-base">
+                    Reach the details of professional experience in details with their complete explanations.
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2 mb-2">
+                <a href='#contact' className='bg-purple-600 hover:bg-purple-800 rounded-xl px-5 py-2'>View Details</a>
+                </div>
+              </div>
+              
+            
+          </div>
+        <div id='projects' className='col-start-7 col-span-4 row-start-3 row-span-1 flex justify-end items-center h-screen max-lg:flex-col max-lg:h-auto max-lg:mt-10 max-lg:mb-5'>
             <p className=' lg:hidden text-lg text-red-600'>Click image to scroll!</p>
           <div className='screen rounded-sm scroll-auto'>
             <img src={project1} className='rounded-lg w-56 h-80 object-cover '/>
           </div>
         </div>
-        <div className='col-start-3 col-span-6 row-start-2 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
+        <div className='col-start-3 col-span-6 row-start-3 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
           <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5 max-lg:w-full'>Full-Stack Responsive E-commerce App</h1></div>
           <p className='w-9/12 mb-5 max-lg:w-full'><ul className='list-disc leading-10'>
               <li>Express.js is used to create api paths and requests.</li>
@@ -89,12 +136,12 @@ function App() {
           </div>
           <div><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 '>Contact Me</a></div>
         </div>
-        <div className='col-start-3 col-span-4 row-start-3 row-span-1 flex justify-start items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5 '>
+        <div className='col-start-3 col-span-4 row-start-4 row-span-1 flex justify-start items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5 '>
         <div className='screen3'>
             <img src={project4} className='rounded-lg w-56 h-80 object-cover '></img>
           </div>
         </div>
-        <div className='col-start-7 col-span-6 row-start-3 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
+        <div className='col-start-7 col-span-6 row-start-4 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
           <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5 max-lg:w-full'>Full-Stack Dashboard</h1></div>
           <p className='w-9/12 mb-5 max-lg:w-full'>
           <ul className='list-disc leading-10'>
@@ -112,12 +159,12 @@ function App() {
           </div>
           <div><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 '>Contact Me</a></div>
         </div>
-        <div className='col-start-3 col-span-4 row-start-5 row-span-1 flex justify-start items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5 '>
+        <div className='col-start-3 col-span-4 row-start-6 row-span-1 flex justify-start items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5 '>
         <div className='screen'>
             <img src={project2} className='rounded-lg w-56 h-80 object-cover '></img>
           </div>
         </div>
-        <div className='col-start-7 col-span-6 row-start-5 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
+        <div className='col-start-7 col-span-6 row-start-6 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
           <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5 max-lg:w-full'>Frontend-React Game App</h1></div>
           <p className='w-9/12 mb-5 max-lg:w-full'>
           <ul className='list-disc leading-10'>
@@ -134,12 +181,12 @@ function App() {
           </div>
           <div><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 '>Contact Me</a></div>
         </div>
-        <div className='col-start-7 col-span-4 row-start-4 row-span-1 flex justify-end items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-10'>
+        <div className='col-start-7 col-span-4 row-start-5 row-span-1 flex justify-end items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-10'>
         <div className='screen2 rounded-lg'>
             <img src={project3} className='rounded-lg w-56 h-80 object-cover '></img>
           </div>
         </div>
-        <div className='col-start-3 col-span-6 row-start-4 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
+        <div className='col-start-3 col-span-6 row-start-5 row-span-1 flex flex-col justify-center items-start h-screen max-lg:h-auto'>
           <div className='text-4xl mb-10 font-bold '><h1 className='w-4/5 max-lg:w-full'>A Responsive Freelance Website From The Scratch - 'architectural-website'</h1></div>
           <p className='w-9/12 mb-5 max-lg:w-full'>
             <ul className='list-disc leading-10'>
@@ -160,10 +207,10 @@ function App() {
           </div>
           <div><a href='#contact' className='bg-emerald-600 hover:bg-emerald-800 rounded-xl px-5 py-2 '>Contact Me</a></div>
         </div>   
-        <div className='col-start-3 col-span-5 row-start-6 row-span-1 flex justify-start items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5'>
+        <div className='col-start-3 col-span-5 row-start-7 row-span-1 flex justify-start items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5'>
           <img src={p1} className='rounded-lg'></img>
         </div>
-        <div id='contact' className='col-start-7 col-span-6 row-start-6 row-span-1 flex justify-center items-center h-screen max-lg:h-auto max-lg:mb-10'>
+        <div id='contact' className='col-start-7 col-span-6 row-start-7 row-span-1 flex justify-center items-center h-screen max-lg:h-auto max-lg:mb-10'>
           <div >
             <a href='https://tr.linkedin.com/in/yssfklc' className='flex flex-col justify-center items-center'>
               <img src={linkedin} className='rounded-lg mr-10 mb-5 max-lg:h-10'/>
