@@ -26,6 +26,7 @@ import project5 from './image/documenthelper.png';
 import project6 from './image/dogbreedclassification.png';
 import project7 from './image/bulldozerproject.png';
 import project8 from './image/heartdiseaseproject.png';
+import project9 from './image/cv.png';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 function App() {
@@ -55,9 +56,9 @@ function App() {
       </navbar>
       {/* AI app redirect bar design */}
       <div className='bg-gradient-to-r from-red-500 to-purple-500 rounded-xl py-3 flex justify-center items-center max-lg:py-2 max-lg:px-4'>
-        <a href='https://yusufai.streamlit.app/' target='_blank' ><p className='flex text-neutral-700 underline text-center'><img src={openai} className='mr-2'></img> !!!! Ask Your Questions About me to Yusuf AI (Click Here)<img src={sendicon} className='ml-2'></img></p></a>
+        <a href='#chatbot' ><p className='flex text-neutral-700 underline text-center'><img src={openai} className='mr-2'></img> !!!! Ask Your Questions About me to Yusuf AI (Click Here)<img src={sendicon} className='ml-2'></img></p></a>
       </div>
-      <div className='grid grid-cols-12 grid-rows-8 hover:scroll-auto max-lg:flex max-lg:flex-col max-lg:items-center'>
+      <div className='grid grid-cols-12 grid-rows-10 hover:scroll-auto max-lg:flex max-lg:flex-col max-lg:items-center'>
         {/* First Page Design */}
         <div className='col-start-2 col-span-4 row-start-1 row-span-1 h-screen flex justify-center items-center max-lg:py-10 max-lg:h-auto'>
           <img src={ysf} className='rounded-full h-96  max-lg:h-40'></img>
@@ -74,12 +75,12 @@ function App() {
               
         </div>
         {/* Card Designs */}
-        <div className='flex col-start-3 col-span-8 row-start-2 row-span-1 h-max justify-center items-center max-lg:flex-col mb-10'>
-              <div class="bg-gray-300 w-4/12 rounded overflow-hidden shadow-lg mr-5 max-lg:w-full max-lg:mb-4">
+        <div className='flex col-start-2 col-span-10 row-start-2 row-span-1 h-max justify-center items-center max-sm:flex-col mb-10'>
+              <div class="bg-gray-300 w-3/12 h-9/12 rounded overflow-hidden shadow-lg mr-5 max-lg:w-4/12 max-sm:w-2/3 max-lg:mb-4">
                 <div className='flex justify-center items-center'>
-                  <img class="w-full h-64 object-cover" src={project1} alt="Sunset in the mountains"/>
+                  <img class="w-full h-64 object-cover" src={project1} alt="Picture representing software projects"/>
                 </div>
-                <div class="px-6 py-4">
+                <div class="px-6 py-4 h-56">
                   <div class="font-bold text-xl mb-2">Software Projects</div>
                   <p class="text-gray-700 text-base">
                     Reach the details of software projects in details with their complete explanations.
@@ -89,11 +90,11 @@ function App() {
                 <a href='#softwareprojects' className='bg-purple-600 hover:bg-purple-800 rounded-xl px-5 py-2'>View the Projects</a>
                 </div>
               </div>
-              <div class="bg-gray-300 w-4/12 rounded overflow-hidden shadow-lg mr-5 max-lg:w-full max-lg:mb-4">
+              <div class="bg-gray-300 w-3/12 h-9/12 rounded overflow-hidden shadow-lg mr-5 max-lg:w-4/12 max-sm:w-2/3 max-lg:mb-4">
                 <div className='flex justify-center items-center'>
-                  <img class="w-full h-64 object-cover" src={project1} alt="Sunset in the mountains"/>
+                  <img class="w-full h-64 object-cover" src={project8} alt="Picture representing ai projects"/>
                 </div>
-                <div class="px-6 py-4">
+                <div class="px-6 py-4 h-56">
                   <div class="font-bold text-xl mb-2">AI Projects</div>
                   <p class="text-gray-700 text-base">
                     Reach the details of AI projects in details with their complete explanations.
@@ -103,11 +104,11 @@ function App() {
                 <a href='#aiprojects' className='bg-purple-600 hover:bg-purple-800 rounded-xl px-5 py-2'>View The Projects</a>
                 </div>
               </div>
-              <div class="bg-gray-300 w-4/12 rounded overflow-hidden shadow-lg mr-5 max-lg:w-full max-lg:mb-4">
+              <div class="bg-gray-300 w-3/12 h-9/12 rounded overflow-hidden shadow-lg mr-5 max-lg:w-4/12 max-sm:w-2/3 max-lg:mb-4">
                 <div className='flex justify-center items-center'>
-                  <img class="w-full h-64 object-cover" src={project1} alt="Sunset in the mountains"/>
+                  <img class="w-full h-64 object-cover" src={project9} alt="Yusuf Kilic Professional experience"/>
                 </div>
-                <div class="px-6 py-4">
+                <div class="px-6 py-4 h-56">
                   <div class="font-bold text-xl mb-2">Professional Experience</div>
                   <p class="text-gray-700 text-base">
                     Reach the details of professional experience in details with their complete explanations.
@@ -121,7 +122,7 @@ function App() {
             
         </div>
         {/* Software Projecs are listed */}
-        <div className='col-start-1 col-span-12 row-start-3 row-span-7'>
+        <div className='col-start-1 col-span-12 row-start-3 row-span-7 mb-16'>
           <div className='grid grid-cols-12 grid-rows-12 hover:scroll-auto max-lg:flex max-lg:flex-col max-lg:items-center'>
             <h2 className='col-start-5 col-span-4 row-start-1 row-span-1 text-4xl text-center underline font-bold text-gray-600 mt-3' id='softwareprojects'>1. Software Projects</h2>
             <div id='projects' className='col-start-7 col-span-4 row-start-1 row-span-1 flex justify-end items-center h-screen max-lg:flex-col max-lg:h-auto max-lg:mt-10 max-lg:mb-5'>
@@ -296,31 +297,41 @@ function App() {
           </div>
         </div>
         
+        
+        
         {/* Footer Design */}
-        <div className='col-start-3 col-span-5 row-start-8 row-span-1 flex justify-start items-center h-screen max-lg:h-auto max-lg:mt-10 max-lg:mb-5'>
-          <img src={p1} className='rounded-lg'></img>
+        <div className='col-start-1 col-span-12 row-start-10 row-span-1 '>
+          <div className='grid grid-cols-12 grid-rows-2 max-lg:grid-cols-2 max-lg:grid-rows-3 max-lg:h-auto max-lg:mt-10 max-lg:mb-5 rounden-lg'>
+            <iframe id='chatbot' className='col-start-3 col-span-8 row-start-1 max-lg:col-start-1 max-lg:row-start-1 row-span-1 w-full h-full rounden-lg' title='chatbot' src="https://yusufai.streamlit.app/?embedded=true"/>
+            <div className='col-start-3 col-span-5 row-start-2 flex justify-start items-center h-screen max-lg:col-start-1 max-lg:row-start-2 max-lg:h-auto max-lg:mt-10 max-lg:mb-5'>
+              <img src={p1} className='rounded-lg'></img>
+            </div>
+            <div id='contact' className='col-start-8 col-span-5 row-start-2 flex justify-center items-center h-screen max-lg:col-start-1 max-lg:row-start-3 max-lg:h-auto max-lg:mb-10'>
+              <div>
+                <a href='https://tr.linkedin.com/in/yssfklc' className='flex flex-col justify-center items-center'>
+                  <img src={linkedin} className='rounded-lg mr-10 mb-5 max-lg:h-10'/>
+                  <img src={arrow2} className='animate-bounce rounded-lg mr-10 self-center'/>
+                </a>
+              </div>
+              <div >
+                <a href='https://github.com/yssfklc' className='flex flex-col justify-center items-center'>
+                  <img src={github} className='rounded-lg mr-10 mb-5 max-lg:h-10'/>
+                  <img src={arrow2} className='animate-bounce rounded-lg mr-10 self-center'/>
+                </a>
+              </div>
+              <div>
+              <a href='mailto:yssfklc@gmail.com' className='flex flex-col justify-center items-center'>
+                <img src={mail} className='rounded-lg mr-10 mb-5 max-lg:h-10'/>
+                <img src={arrow2} className='animate-bounce rounded-lg mr-10 self-center'/>    
+              </a>
+              </div>
+            </div> 
+
+          </div>
         </div>
-        <div id='contact' className='col-start-8 col-span-5 row-start-8 row-span-1 flex justify-center items-center h-screen max-lg:h-auto max-lg:mb-10'>
-          <div>
-            <a href='https://tr.linkedin.com/in/yssfklc' className='flex flex-col justify-center items-center'>
-              <img src={linkedin} className='rounded-lg mr-10 mb-5 max-lg:h-10'/>
-              <img src={arrow2} className='animate-bounce rounded-lg mr-10 self-center'/>
-            </a>
-          </div>
-          <div >
-            <a href='https://github.com/yssfklc' className='flex flex-col justify-center items-center'>
-              <img src={github} className='rounded-lg mr-10 mb-5 max-lg:h-10'/>
-              <img src={arrow2} className='animate-bounce rounded-lg mr-10 self-center'/>
-            </a>
-          </div>
-          <div >
-          <a href='mailto:yssfklc@gmail.com' className='flex flex-col justify-center items-center'>
-            <img src={mail} className='rounded-lg mr-10 mb-5 max-lg:h-10'/>
-            <img src={arrow2} className='animate-bounce rounded-lg mr-10 self-center'/>    
-          </a>
-          </div>
-        </div> 
-      </div>
+          
+        </div>
+        
     </div>
   );
 }
